@@ -1,4 +1,4 @@
-﻿SELECT
+SELECT
 	Date,
 	Day,
 	DaySuffix,
@@ -20,5 +20,3 @@
 	WeekOffset		  = [WeekOfYear] - DATEPART(WEEK, GETDATE()), -- (week - this week)
 	DayOfWeekOffset	  = [Weekday] - DATEPART(WEEKDAY, GETDATE()) -- (weekday - this weekday)
 FROM Calendar
-WHERE [Year] - YEAR(GETDATE()) = 0
-OR [Year] - YEAR(GETDATE()) = -1
